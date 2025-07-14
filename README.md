@@ -11,7 +11,7 @@ A simple yet powerful desktop stopwatch application built to help you track time
 
 ## Screenshots
 
-![Stopwatch App Screenshot](./assets/screenshot.png)
+![Stopwatch App Screenshot](StopWatchApp/StopWatchApp/Assets/screenshot.png)
 
 
 

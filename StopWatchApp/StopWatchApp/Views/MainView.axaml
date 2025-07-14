@@ -1,0 +1,81 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:StopWatchApp.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="450"
+             x:Class="StopWatchApp.Views.MainView"
+             x:DataType="vm:MainViewModel">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+	
+	<UserControl.Background>
+		<ImageBrush Source="/Assets/stopwatch3.jpg" />
+	</UserControl.Background>
+	
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+
+
+
+		<!-- Title Message -->
+		<TextBlock Text="Welcome to the Stopwatch App"
+		   FontSize="24"
+		   FontWeight="Bold"
+			Foreground="Red"
+		   HorizontalAlignment="Center"
+		   VerticalAlignment="Top">
+		</TextBlock>
+
+
+		<!--Stopwatch timer-->
+		<TextBlock Name="ElapsedTextBlock"
+				   Text="00:00:00"
+				   FontSize="48"
+				   FontWeight="Bold"
+				   Foreground="Black"
+				   Margin="0,185,10,10"
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Center" >
+		</TextBlock>
+
+		<!-- Start/Stop Button -->
+		<Button Content = "Start/Stop"
+				Click="StartStopButton"
+				Margin="0,20,0,10"
+				Foreground="White"
+				Background="Gray"
+			    HorizontalAlignment="Center"
+			    VerticalAlignment="Top">
+			<Button.Styles>
+				<Style Selector="Button:pointerover /template/ ContentPresenter">
+					<Setter Property="Background" Value="Green"/>
+				</Style>
+				<Style Selector="Button:pressed /template/ ContentPresenter">
+					<Setter Property="TextBlock.Background" Value="Green"/>
+				</Style>
+			</Button.Styles>
+		</Button>
+
+		<!-- Reset Button -->
+		<Button Content="Reset"
+				Click="ResetButton"
+				Foreground="White"
+				Background="Gray"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Bottom">
+			<Button.Styles>
+				<Style Selector="Button:pointerover /template/ ContentPresenter">
+					<Setter Property="Background" Value="Red"/>
+				</Style>
+				<Style Selector="Button:pressed /template/ ContentPresenter">
+					<Setter Property="TextBlock.Background" Value="Red"/>
+				</Style>
+			</Button.Styles>
+		</Button>
+	</StackPanel>
+
+
+</UserControl>

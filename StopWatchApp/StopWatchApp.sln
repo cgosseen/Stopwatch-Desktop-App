@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopWatchApp", "StopWatchApp\StopWatchApp.csproj", "{06B53DCE-936A-E94E-F0BC-E89A4E2043EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopWatchApp.Desktop", "StopWatchApp.Desktop\StopWatchApp.Desktop.csproj", "{98B7A673-E082-D3E9-32AB-2AA240089745}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06B53DCE-936A-E94E-F0BC-E89A4E2043EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B53DCE-936A-E94E-F0BC-E89A4E2043EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B53DCE-936A-E94E-F0BC-E89A4E2043EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B53DCE-936A-E94E-F0BC-E89A4E2043EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B7A673-E082-D3E9-32AB-2AA240089745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B7A673-E082-D3E9-32AB-2AA240089745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B7A673-E082-D3E9-32AB-2AA240089745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B7A673-E082-D3E9-32AB-2AA240089745}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE073A5B-4F7E-4996-9EF4-107BCF32F585}
+	EndGlobalSection
+EndGlobal
